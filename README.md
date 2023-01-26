@@ -3,7 +3,6 @@
 ## Setup
 
 ```bash
-# npm
 npm install
 ```
 
@@ -27,6 +26,15 @@ Locally preview production build:
 npm run preview
 ```
 
+### use scss
+```bash
+npm install sass --save-dev
+emacs nuxt.config.ts
+===
+css: ['~/assets/css/common.scss']
+===
+```
+
 ## typecheck
 
 ```bash
@@ -46,4 +54,11 @@ vite: {
         }
     }
 ===
+```
+
+## create directories & files
+
+```bash
+mkdir -p ./{pages,layouts,components,assets/css,public,composables}
+touch ./{pages/index.vue,layouts/default.vue,assets/css/common.scss}
 ```
